@@ -1,0 +1,39 @@
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid black;
+    box-shadow:
+        2px 2px 5px 1px #333,
+        0 50px 5px -40px rgba(209, 209, 209, 0.5) inset;
+    transition: all .5s ease;
+    cursor: pointer;
+    padding: 20px 10px;
+    background: rgb(78, 161, 78);
+}
+i {
+    font-size: 20px;
+    width: 30px;
+    transition: all .5s ease;
+}
+button:hover {
+    width: 140px;
+    padding-left: 5px;
+}
+p {
+    text-wrap: nowrap;
+    display: none;
+    opacity: 0;
+    font-size: 18px;
+}
+button:hover p {
+    transition: all .5s ease;
+    display: block;
+    opacity: 1;
+    margin-left: 5px;
+}
